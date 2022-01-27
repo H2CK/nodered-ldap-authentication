@@ -20,10 +20,10 @@ Follow the steps to install the custom LDAP authentication functionality
 
 | Configuration Property | Description |
 |---|---|
-| baseDn | Base DN where the users will be found in LDAP tree. E.g. `ou=people,cn=example,cn=com` |
-| bindDn | DN of admin user by which a bind to the LDAP server is performed to search for users. E.g. `cn=admin,cn=example,cn=com` |
+| baseDn | Base DN where the users will be found in LDAP tree. E.g. `ou=people,dc=example,dc=com` |
+| bindDn | DN of admin user by which a bind to the LDAP server is performed to search for users. E.g. `cn=admin,dc=example,dc=com` |
 | bindCredentials | Password of the bind user. |
 | filter | Additional filter to apply, when querying for users. For example you might limit the query to specific groups |
-| userAttribute | LDAP attribute which contains the username, by which the user login in at Node-RED. E.g. `uid` |
-| adminGroup | DN of the group the user must be a member of to be granted admin rights. E.g. `cn=node-red-admin,ou=groups,cn=example,cn=com` |
-| guestGroup | DN of the group the user must be a member of to be granted read rights. E.g. `cn=node-red-guest,ou=groups,cn=example,cn=com` |
+| idAttribute | LDAP attribute which contains the username, by which the user login in at Node-RED. E.g. `uid` |
+| adminGroupDn | DN of the group the user must be a member of to be granted admin rights. E.g. `cn=node-red-admin,ou=groups,dc=example,dc=com` |
+| guestGroupDn | DN of the group the user must be a member of to be granted read rights. E.g. `cn=node-red-guest,ou=groups,dc=example,dc=com` |
